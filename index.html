@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-Blo4klBN.js"></script>
+    <script type="module" crossorigin src="./assets/index-Dha_vl69.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-DKwl_nIp.css">
   </head>
   <body class="page">
@@ -56,8 +56,8 @@
                 required
                 minlength="2"
                 maxlength="40"
-                pattern="^[a-zA-Zа-яА-ЯёЁ\s-]+$"
-                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
+                pattern="^[A-Za-zА-Яа-яЁё _\-]+$"
+                data-error-message="Разрешены только латинские, кириллические буквы, пробелы, дефис и нижнее подчёркивание"
               />
               <span class="popup__error user-name-error"></span>
             </label>
@@ -102,8 +102,8 @@
                 required
                 minlength="2"
                 maxlength="30"
-                pattern="^[a-zA-Zа-яА-ЯёЁ\s-]+$"
-                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
+                pattern="^[A-Za-zА-Яа-яЁё _\-]+$"
+                data-error-message="Разрешены только латинские, кириллические буквы, пробелы, дефис и нижнее подчёркивание"
               />
               <span class="popup__error place-name-error"></span>
             </label>
@@ -139,19 +139,15 @@
         </div>
       </div>
 
-      <!--
       <div class="popup popup_type_remove-card">
         <div class="popup__content">
           <button type="button" class="popup__close"></button>
           <h3 class="popup__title">Вы уверены?</h3>
           <form class="popup__form" name="remove-card" novalidate>
-            <button type="submit" class="button popup__button">
-              Да
-            </button>
+            <button type="submit" class="button popup__button">Да</button>
           </form>
         </div>
       </div>
-      -->
 
       <div class="popup popup_type_edit-avatar">
         <div class="popup__content">
